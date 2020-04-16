@@ -133,7 +133,7 @@ def num_points_scored(name)
       
      if stuff.include?(name)
           
-       return hash[location][attribute][:points]
+       return hash[location][attribute][points]
       end
     end
   end
