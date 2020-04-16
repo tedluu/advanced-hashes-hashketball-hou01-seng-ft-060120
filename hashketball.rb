@@ -125,5 +125,7 @@ def game_hash
     }
   }
 end
-
+def num_points_scored
+  hash = game_hash
+  game_hash.each do 
 # Write code here
