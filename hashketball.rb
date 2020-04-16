@@ -128,7 +128,8 @@ end
 def num_points_scored(name)
   hash = game_hash
   game_hash.each do |location,info|
-    info[players].each do |player_hash|
+    arr = info[players]
+    arr.each do |player_hash|
       player_hash.each do |key,stuff|
         if stuff == name 
           return player_hash[points]
