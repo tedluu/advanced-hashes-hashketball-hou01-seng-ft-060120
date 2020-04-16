@@ -125,10 +125,10 @@ def game_hash
     }
   }
 end
-def num_points_scored
+def num_points_scored(name)
   hash = game_hash
   game_hash.each do |location,info|
     info.each do |attribute,stuff|
-      
+      if attribute[player_name] == name 
       
 # Write code here
