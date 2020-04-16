@@ -128,5 +128,6 @@ end
 def num_points_scored
   hash = game_hash
   game_hash.each do |location,info|
-    
+    info.each do |stat,value|
+      
 # Write code here
