@@ -128,8 +128,14 @@ end
 def num_points_scored(name)
   hash = game_hash
   game_hash.each do |location,info|
-    info.each do |attribute,stuff|
-      if attribute[player_name] == name 
-        return hash[location][attribute]
+    info[players].each do |player_hash|
+      player_hash.each do |key,stuff|
+        if stuff == name 
+          return player_hash[points]
+     end 
+   end 
+ end 
+ end 
+ end 
       
 # Write code here
